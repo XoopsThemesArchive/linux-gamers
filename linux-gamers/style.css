@@ -1,0 +1,606 @@
+/*----------------------  CSS FOR XOOPS 2.0.3 -------------------------*/
+
+/*-- body --*/
+body {
+  color: #787878;
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+hr {
+  color: #CEABAB;
+  height:1px;
+}
+
+
+/*-- standard link --*/
+a {
+  color: #482C2C;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #F1AC08;
+}
+
+
+/*-- headlines --*/
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+
+/*-- enum --*/
+ul {
+  margin: 2px;
+  padding: 2px;
+  list-style: square inside;
+  text-align: left;
+  color: #CEABAB;
+}
+
+li {
+  list-style: square url(images/list.png) inside;
+  color: #5D4747;
+}
+
+
+/*-- input fields --*/
+input {
+  /*-- padding: 1px 1px 1px 1px; --*/
+  color: #787878;
+  background-color:#FFFFFF ;
+  border-color: #A44040;
+  border-style: solid;
+  border-width: 1px;
+}
+
+textarea {
+  padding: 1px 1px 1px 1px;
+  color: #787878;
+  background-color:#FEFEFE ;
+  border-color: #A44040;
+  border-style: solid;
+  border-width: 1px;
+}
+
+select{
+  padding: 1px 1px 1px 1px;
+  color: #787878;
+  background-color:#FEFEFE ;
+  border-color: #A44040;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+
+/*-- table --*/
+table {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+th {
+  background-color: #6B6B6B;
+  color: #F0F3F5; padding : 4px;
+  vertical-align : middle;
+  font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+}
+
+th a{
+  color: #E6E6E6;
+}
+th a:hover{
+  color: #FFFFFF;
+}
+table td {
+  padding: 0;
+  border-width: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+/*################# header ##################*/
+
+/*-- banner --*/
+td#headerbanner {}
+td#headerbar {}
+
+
+/*################# blocks ##################*/
+
+/*--.................. left block .....................--*/
+td#leftcolumn {
+  width: 184px;
+  font-size:12px;
+  background-color: #ECECEC; /* background color left */
+  border-right: thin dotted #B96464;
+}
+td#leftcolumn th {
+  background-color: #D7D3D3;
+  vertical-align: middle;
+}
+
+/* block header */
+td#leftcolumn div.blockTitle {
+  width: 174px;
+  padding:10px 5px 17px ;
+  color:  #555555; /* headline color B92424 */
+  font-weight: bold;
+  font-size: 12px;
+  font-variant: small-caps;
+  background-image: url(images/menu/title_left.png);
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+/* block */
+td#leftcolumn div.blockContent {
+  padding: 3px 3px 3px 4px;
+  line-height: 18px;
+}
+
+
+/*--.................. center ..................--*/
+td#centercolumn {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+td#centercolumn th {
+  background-color:#D7D3D3;
+  vertical-align: middle;
+}
+td#centerCcolumn {
+  padding: 0px 3px 1px 3px;
+}
+td#centerCcolumn div.blockTitle {
+  padding: 4px 3px 3px 3px;
+  background-color: #E6E6E6;
+  color:  #A44040;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px dotted #CEABAB;
+}
+td#centerCcolumn div.blockContent {
+  padding: 3px 0px 3px 0px;
+  line-height: 120%;
+}
+
+/*--.................. center left.................. --*/
+td#centerLcolumn {
+  width: 50%;
+  padding: 0px 3px 0px 5px;
+}
+td#centerLcolumn div.blockTitle {
+  padding: 4px 3px 3px 3px;
+  background-color: #E6E6E6;
+  color: #A44040;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px dotted #CEABAB;
+}
+td#centerLcolumn div.blockContent {
+  padding: 3px 0px 3px 0px;
+  line-height: 120%;}
+
+
+/*--.................. center right ..................--*/
+td#centerRcolumn {
+  width: 50%;
+  padding: 0px 3px 0px 3px;
+}
+
+td#centerRcolumn div.blockTitle {
+  padding: 4px 3px 3px 3px;
+  background-color: #E6E6E6;
+  color: #A44040;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px dotted #CEABAB;
+}
+
+td#centerRcolumn div.blockContent {
+  padding: 3px 0px 3px 0px;
+  line-height: 120%;
+}
+
+
+
+/*--.................. content.................. --*/
+div#content {
+  text-align: left;
+  padding: 8px 7px 8px 7px;
+}
+
+
+
+/*--.................. right blcok ..................--*/
+td#rightcolumn {
+  width:200px;
+  font-size:12px;
+  border-left: thin dotted #B96464;
+}
+
+td#rightcolumn th {
+  background-color: #D7D3D3;
+  vertical-align: middle;
+  color: 5E8F6C;
+}
+
+/* block header */
+td#rightcolumn div.blockTitle {
+  padding: 10px 17px 10px ;
+  color: #555555;
+  font-weight: bold;
+  font-size: 12px;
+  font-variant: small-caps;
+  background: url(images/menu/title_right.png);
+  background-repeat: no-repeat;
+}
+/* block */
+td#rightcolumn div.blockContent {
+  padding: 3px 3px 3px 3px;
+  line-height: 120%;
+  color: #BB7070; /* font right block */
+}
+/*-- footer --*/
+tr#footerline {
+  background: #CEABAB;
+  height: 5px;
+}
+tr#footerbar {
+  background: #941D1D;
+  color: #F0F3F5;
+  height: 30px;
+  vertical-align: middle;
+}
+
+
+/*--.................. main-menu ..................--*/
+td#mainmenu a {
+  color: #B96464;
+  margin: 0;
+  padding: 2px 2px 2px 0px;
+  border-bottom-color: #EAEAEA;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: #FFFFFF;
+  background-image: url(images/menu/mmenu_bg.gif);
+  background-repeat: no-repeat;
+}
+td#mainmenu a:hover {
+  color : #333333;
+  background: #EEEEEE url(images/menu/menu_bg2.gif) no-repeat;
+}
+
+td#mainmenu a.menuTop {
+  border-top-color: #EAEAEA;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-left: 29px;
+}
+
+td#mainmenu a.menuMain {
+  padding-left: 29px;
+}
+td#mainmenu a.menuSub { color: #999999;
+  padding-left: 40px;
+  /*background: #FFFFFF no-repeat; */
+}
+
+
+/*--.................. usermenu ..................--*/
+td#usermenu a {
+  margin: 0;
+  padding: 2px 2px 2px 30px;
+  color: #FEFEFE;
+  border-bottom-color: #FFFFFF;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: #A44040;
+  background-image: url(images/menu/menu_bg.gif);
+  background-repeat: no-repeat;
+}
+td#usermenu a:hover {
+  color: #FEFEFE;
+  background-color: #CA4747;
+  background-image: url(images/menu/menu_bg2.gif);
+  background-repeat: no-repeat;
+}
+td#usermenu a.menuTop {
+  border-top-color: #EAEAEA;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+td#usermenu a.highlight {}
+
+
+/*-- tables --*/
+.outer {
+  background-color: #FFFFFF;
+  border: 1px solid #CEABAB;
+}
+.head {
+  background-color:#D7D3D3;
+  padding:5px;
+  color: #A44040
+}
+.even {
+  background-color: #EBEBEB;
+  padding: 5px;
+}
+.odd {
+  background-color: #F0F3F5;
+  padding: 5px;
+}
+.foot {
+  background-color: #D7D3D3;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #A44040;
+  text-align: center;
+}
+tr.even td {background-color: #EBEBEB; padding: 5px;}
+tr.odd td {background-color: #F0F3F5; padding: 5px;}
+
+
+/*--.................. messages ..................--*/
+div.errorMsg {
+  background-color: #AF4A92;
+  text-align: center;
+  border-top: 1px solid #A44040;
+  border-left: 1px solid #A44040;
+  border-right: 1px solid #A44040;
+  border-bottom: 1px solid #A44040;
+  font-weight: bold;
+  padding: 10px;
+  color: White;
+}
+div.confirmMsg {
+  background-color: #F0F3F5;
+  color: #A44040;
+  text-align: center;
+  border-top: 1px solid #CEABAB;
+  border-left: 1px solid #CEABAB;
+  border-right: 1px solid #CEABAB;
+  border-bottom: 1px solid #CEABAB;
+  font-weight: bold;
+  padding: 10px;
+}
+div.resultMsg {
+  background-color : #CEABAB;
+  color: #E6E6E6;
+  text-align: center;
+  border-top: 1px solid #A44040;
+  border-left: 1px solid #A44040;
+  font-weight: bold;
+  border-right: 1px solid #A44040;
+  border-bottom: 1px solid #A44040;
+  padding: 10px;
+}
+
+
+/*-- [CODE][/CODE] --*/
+div.xoopsCode {
+  background: #FFFFFF;
+  border: 1px dotted #A44040;
+  font-family: "Courier New", "Courier", "monospace";
+  color: #000000;
+}
+
+
+/*-- [QUOTE][/QUOTE] --*/
+div.xoopsQuote {
+  background: #FFFFFF;
+  border: 1px dotted #A44040;
+  font-family: "Courier New", "Courier", "monospace";
+  color: #000000;
+}
+
+/*-- CONSOLE --*/
+.term {
+  font-family: "Courier New", "Courier", "monospace";
+  background-color: #EEEEEE;
+  border: 1px solid #A44040;
+}
+div.term {
+  width: 42em;
+  margin: 4px 2em;
+}
+
+
+/*--.................. news ..................--*/
+.item {}
+
+.itemHead {
+  background-color: #A44040;
+  color: #FEFEFE;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  border: 1px dotted #000000;
+}
+.itemInfo {
+  color: #8D94AE; text-align: right;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.itemTitle a {
+  color: #E6E6E6;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.itemTitle a:hover{
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+
+.itemBody {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.itemText {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.6em;
+}
+.itemText:first-letter {
+  font-size: 133%;
+  font-weight: bold;
+}
+.itemFoot {
+  text-align: right;
+  padding: 5px 5px 5px 5px;
+  color: #8D94AE;
+
+}
+.itemFoot a{
+  color: #4F2525;
+}
+.itemFoot a:hover{
+  color: #373A47;
+  text-decoration: underline;
+}
+.itemAdminLink {}
+.itemPermaLink {}
+
+
+/*-- comments --*/
+.comTitle {
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #A44040;
+}
+.comText {
+  padding: 3px;
+}
+.comUserStat {
+  font-size: 12px;
+  color:#A44040;
+  font-weight:bold;
+  border: 1px solid #CEABAB;
+  background-color: #FFFFFF;
+  margin: 3px;
+  padding: 3px;
+}
+.comUserStatCaption {
+  font-weight: normal;
+}
+.comUserStatus {
+  margin-left: 3px;
+  margin-top: 10px;
+  color: #A44040;
+  font-weight:bold;
+  font-size: 12px;
+}
+.comUserRank {
+  margin: 2px;
+}
+.comUserRankText {
+  font-size: 12px;
+  font-weight:bold;
+}
+.comUserRankImg {
+  border: 0;
+}
+.comUserName {
+}
+.comUserImg {
+  margin: 2px;
+}
+.comDate {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px;
+}
+.comDateCaption {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*###################### CSS FOR XOOPS 2.0.3 #########################*/
+
+
+
+/*#################### linuX-gamers.net CSS  #########################*/
+
+/*-- home theme 941D1D --*/
+.head_table {
+  height: 145px;
+  background-color: #FFFFFF;
+}
+.head_logo {
+  width: 300px;
+  height: 140px;
+}
+.head_banner {
+  height: 140px;
+  width: 100%;
+  background-image: url(images/head/logo-px.png);
+}
+.head_logo2 {
+  width: 200px;
+  height: 140px;
+}
+.head_bar {
+  background-color: #E6E6E6;
+  height: 5px;
+}
+
+
+.left_pict {
+  width: 65px; background-color: #ffffff; vertical-align: top;
+}
+.left_logo {
+  height: 178px; width: 65px; background-color: #ffffff; vertical-align: bottom;
+}
+
+
+/*-- topmenu --*/
+.topmenu_right_menu {
+
+  height: 49px;
+  width: 229px;
+  background: url(images/topmenu/menu.png) repeat-x;
+  padding-top: 10px;
+}
+
+.topmenu_center {
+  height: 49px;
+  width: 105px;
+  background: url(images/topmenu/center.png) no-repeat;
+}
+
+.topmenu_bar {
+  height: 49px;
+  background: url(images/topmenu/bar.png) repeat-x;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.topmenu_bar a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.topmenu_bar a:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/*-- theme based on imago theme no. 6 --*/

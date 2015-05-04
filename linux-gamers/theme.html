@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+
+<table class="head_table" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <!-- left logo -->
+    <td class="head_logo">
+      <a href="<{$xoops_url}>/">
+      <img name="logo" src="<{$xoops_imageurl}>images/head/logo.png" border="0" alt="linuX-gamers.net">
+      </a>
+    </td>
+    <!-- banner in the middle -->
+    <td class="head_banner" align="center">
+      <{$xoops_banner}>
+    </td>
+    <!-- right logo -->
+    <td class="head_logo2" align="right">
+      <img src="<{$xoops_imageurl}>images/head/logo2.png" border="0" alt="linuX-gamers.net">
+    </td>
+  </tr>
+  <tr>
+    <!-- spacer between logo and content -->
+    <td colspan="3" class="head_bar"></td>
+  </tr>
+</table>
+
+<!-- content block -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+
+    <{if $xoops_lblocks}>
+    <td rowspan="2" valign="top" id="leftcolumn">
+
+      <!-- Start left blocks loop -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td id="leftcolumn"> <{foreach item=block from=$xoops_lblocks}> <{include
+            file="linux-gamers.net/theme_blockleft.html"}> <{/foreach}></td>
+        </tr>
+      </table>
+      <!-- End left blocks loop -->
+
+    </td>
+    <{/if}>
+
+    <!-- left picture (girl) -->
+    <{if $xoops_lblocks}>
+    <td class="left_pict"><img src="<{$xoops_imageurl}>images/left/left_picture.png" /></td>
+    <{/if}>
+
+    <td rowspan="2" valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" class="topmenu_bar"><a href="<{$xoops_url}>/"><{$xoops_sitename}></a>-<{$xoops_pagetitle}></td>
+                <td valign="top" class="topmenu_center"></td>
+                <td valign="top" class="topmenu_right_menu">
+                  <table border="0" cellpadding="0" cellspacing="0" width="229">
+                    <tr>
+                      <td><a href="<{$xoops_url}>/"><img name="home" src="<{$xoops_imageurl}>images/topmenu/home.png" width="70" height="29" border="0" alt="linuX-gamers.net"></a></td>
+                      <td><a href="<{$xoops_url}>/modules/wfsection/"><img name="help" src="<{$xoops_imageurl}>images/topmenu/help.png" width="69" height="29" border="0" alt="linuX-gamers.net"></a></td>
+                      <td><a href="<{$xoops_url}>/modules/contact/"><img name="contact" src="<{$xoops_imageurl}>images/topmenu/contact.png" width="90" height="29" border="0" alt="linuX-gamers.net"></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" id="centerCcolumn">
+
+                  <!-- Display center blocks if any -->
+                  <{if $xoops_showcblock == 1}>
+                  <table cellspacing="0">
+                    <tr valign="top">
+                      <td colspan="2" id="centerCcolumn">
+                        <!-- Start center-center blocks loop -->
+                        <{foreach item=block from=$xoops_ccblocks}> <{include
+                        file="linux-gamers.net/theme_blockcenter_c.html"}> <{/foreach}>
+                        <!-- End center-center blocks loop -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" id="centerLcolumn">
+                        <!-- Start center-left blocks loop -->
+                        <{foreach item=block from=$xoops_clblocks}> <{include
+                        file="linux-gamers.net/theme_blockcenter_l.html"}> <{/foreach}>
+                        <!-- End center-left blocks loop -->
+                      </td>
+                      <td valign="top" id="centerRcolumn">
+                        <!-- Start center-right blocks loop -->
+                        <{foreach item=block from=$xoops_crblocks}> <{include
+                        file="linux-gamers.net/theme_blockcenter_r.html"}> <{/foreach}>
+                        <!-- End center-right blocks loop -->
+                      </td>
+                    </tr>
+                  </table>
+                  <{/if}>
+                  <!-- End display center blocks -->
+                  <div id="content"><{$xoops_contents}></div>
+                </td>
+                <{if $xoops_showrblock == 1}>
+                <td valign="top" id="rightcolumn">
+                  <!-- Start right blocks loop -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <{foreach item=block from=$xoops_rblocks}>
+                          <{include file="linux-gamers.net/theme_blockright.html"}>
+                        <{/foreach}>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- End right blocks loop -->
+                </td>
+                <{/if}>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <{if $xoops_lblocks}>
+    <td class="left_logo">
+      <img src="<{$xoops_imageurl}>images/left/left_logo.png" />
+    </td>
+    <{/if}>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr id="footerline">
+    <td></td>
+  </tr>
+  <tr id="footerbar">
+    <td><div align="center"><{$xoops_footer}></div></td>
+  </tr>
+</table>
+</body>
+</html>
